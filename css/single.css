@@ -51,22 +51,34 @@ h3.container {
     max-width: 618px; }
   .single-content h4 {
     margin-top: 73px;
-    margin-bottom: 14px;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
     font-size: 14px;
     font-weight: bold;
     color: #f16d7f;
     text-transform: uppercase;
-    border-bottom: 1px solid #eaeaea;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .single-content h4 div {
-      width: 63px;
-      border-bottom: 3px solid #ef5b70;
+  .single-content div.single-content__pagination {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 15px; }
+    .single-content div.single-content__pagination a {
+      width: 42px;
+      margin: 0;
+      border-bottom: 1px solid #eaeaea; }
+      .single-content div.single-content__pagination a:hover {
+        border-color: #f16d7f;
+        border-width: 3px;
+        position: relative;
+        top: 1px; }
+    .single-content div.single-content__pagination a.single-content__pagination-active {
       position: relative;
-      top: 17px; }
+      top: 1px;
+      width: 63px;
+      border-bottom: 3px solid #ef5b70; }
   .single-content > h3 {
     font-size: 18px;
     font-weight: 900;
