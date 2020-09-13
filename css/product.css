@@ -155,7 +155,8 @@
   .hot-offer__square-product > button {
     width: 128px;
     box-sizing: border-box;
-    border-radius: 3px; }
+    border-radius: 3px;
+    white-space: nowrap; }
     .hot-offer__square-product > button:hover {
       border-color: #ef5b70; }
   .hot-offer__square-product > div {
