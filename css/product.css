@@ -150,22 +150,22 @@
         border: none;
         outline: none; }
 
-.hot-offer__square {
+.hot-offer__square-product {
   position: relative; }
-  .hot-offer__square > button {
+  .hot-offer__square-product > button {
     width: 128px;
     box-sizing: border-box;
     border-radius: 3px; }
-    .hot-offer__square > button:hover {
+    .hot-offer__square-product > button:hover {
       border-color: #ef5b70; }
-  .hot-offer__square > div {
+  .hot-offer__square-product > div {
     width: 128px;
     box-sizing: border-box;
     position: absolute;
     display: flex;
     justify-content: space-between;
     top: 140px; }
-    .hot-offer__square > div > button {
+    .hot-offer__square-product > div > button {
       outline: none;
       justify-content: center;
       text-decoration: none;
@@ -178,7 +178,7 @@
       box-sizing: border-box;
       border: solid 1px #ffffff;
       border-radius: 3px; }
-      .hot-offer__square > div > button:hover {
+      .hot-offer__square-product > div > button:hover {
         cursor: pointer;
         color: #ef5b70;
         border-color: #ef5b70; }
@@ -212,29 +212,35 @@
     .product-pagination > button:hover {
       cursor: pointer;
       transform: scale(1.1); }
+    .product-pagination > button:focus {
+      outline: none;
+      border: 1px solid #ef5b70;
+      border-radius: 3px; }
+    .product-pagination > button:active {
+      transform: scale(0.9); }
 
 .wrapper-offer-women {
   width: 100%;
   background: #222224;
   margin-bottom: -97px; }
 
-.offer-women {
+.product-offer-women {
   background-image: none;
   flex-direction: row;
   justify-content: space-between;
   height: initial; }
-  .offer-women .offer-women__bonus {
+  .product-offer-women .offer-women__bonus {
     margin: 89px 0 115px 0;
     flex-direction: column;
     align-items: center;
     width: 312px; }
-    .offer-women .offer-women__bonus .offer-women__pic {
+    .product-offer-women .offer-women__bonus .offer-women__pic {
       margin: 0; }
-  .offer-women .offer-women__text {
+  .product-offer-women .offer-women__text {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .offer-women .offer-women__text p {
+    .product-offer-women .offer-women__text p {
       text-align: justify;
       letter-spacing: 0.35px; }
 

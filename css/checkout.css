@@ -23,7 +23,8 @@ main.checkout-main {
         color: #222222;
         margin-left: 6px; }
         main.checkout-main ol > li.shipping-details > label:hover {
-          cursor: pointer; }
+          cursor: pointer;
+          color: #ef5b70; }
       main.checkout-main ol > li.shipping-details > article {
         margin-top: 39px;
         margin-left: 33px;

@@ -154,7 +154,7 @@
         &:focus
           border: none
           outline: none
-.hot-offer__square
+.hot-offer__square-product
   position: relative
   & > button
     width: 128px
@@ -215,12 +215,18 @@
     &:hover
       cursor: pointer
       transform: scale(1.1)
+    &:focus
+      outline: none
+      border: 1px solid $color-red-dark
+      border-radius: 3px
+    &:active
+      transform: scale(0.9)
 
 .wrapper-offer-women
   width: 100%
   background: #222224
   margin-bottom: -97px
-.offer-women
+.product-offer-women
   background-image: none
   flex-direction: row
   justify-content: space-between
