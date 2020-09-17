@@ -5,6 +5,7 @@
     <title>Main page</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <div class="header container">
@@ -13,25 +14,28 @@
                 <img src="img/logo.png" alt="logo">bran <span>d</span>
             </a>
             <form class="header__search">
-                <div class="header__browse">Browse <i class="fas fa-caret-down"></i></div>
+                <a href="#" class="header__browse">Browse <i class="fas fa-caret-down"></i></a>
                     <input type="text" placeholder="Search for item">
                     <button class="header__search-button"><i class="fas fa-search"></i></button>
             </form>
         </div>
         <div class="header__right">
-            <a href="#"><img src="img/kart.png" alt="order"></a>
-            <a href="#">My Account <i class="fas fa-caret-down"></i></a>
+            <a href="cart.html">
+                <img src="img/kart.png" alt="order">
+                <div class="header__right-qty">2</div>
+            </a>
+            <a href="checkout.html">My Account <i class="fas fa-caret-down"></i></a>
         </div>
     </div>
     <div class="header_line"></div>
     <div class="topNav">
-        <a href="#">Home</a>
-        <a href="#">Man</a>
-        <a href="#">Women</a>
-        <a href="#">Kids</a>
-        <a href="#">Accoseriese</a>
-        <a href="#">Featured</a>
-        <a href="#">Hot Deals </a>
+        <a href="product.html">Home</a>
+        <a href="product.html">Man</a>
+        <a href="product.html">Women</a>
+        <a href="product.html">Kids</a>
+        <a href="product.html">Accessories</a>
+        <a href="product.html">Featured</a>
+        <a href="product.html">Hot Deals </a>
     </div>
     <div class="image-frame">
         <div class="container second-block">
@@ -96,102 +100,178 @@
             <h2>Featured Items</h2>
             <h4>Shop for items based on what we featured in this week</h4>
         </div>
-        <a href="#" class="hot-offer">
+        <div class="hot-offer">
             <div class="hot-offer__shadow">
                 <img src="img/8-1.jpg" alt="t-shirt">
+                <div class="hot-offer__hover">
+                    <div class="hot-offer__square">
+                        <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
+                    </div>
+                </div>
             </div>
-            <h3>mango people t-shirt</h3>
-            <h3>$52.00</h3>
-            <div class="hot-offer__hover">
-               <div class="hot-offer__square">
-                   <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-               </div>
-            </div>
-        </a>
-        <a href="#" class="hot-offer">
+            <a href="single.html">mango people t-shirt</a>
+            <h3>
+                $52.00
+                <div class="hot-offer__stars">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+            </h3>
+
+
+        </div>
+        <div class="hot-offer">
             <div class="hot-offer__shadow">
                 <img src="img/8-2.jpg" alt="t-shirt">
+                <div class="hot-offer__hover">
+                    <div class="hot-offer__square">
+                        <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
+                    </div>
+
+                </div>
             </div>
-            <h3>mango people t-shirt</h3>
-            <h3>$52.00</h3>
-            <div class="hot-offer__hover">
-               <div class="hot-offer__square">
-                   <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-               </div>
-            </div>
-        </a>
-        <a href="#" class="hot-offer">
+            <a href="single.html">mango people t-shirt</a>
+            <h3>
+                $52.00
+                <div class="hot-offer__stars">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div class="half-star"></div>
+                </div>
+            </h3>
+        </div>
+        <div class="hot-offer">
             <div class="hot-offer__shadow">
                 <img src="img/8-3.jpg" alt="t-shirt">
+                <div class="hot-offer__hover">
+                    <div class="hot-offer__square">
+                        <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
+                    </div>
+                </div>
             </div>
-            <h3>mango people t-shirt</h3>
-            <h3>$52.00</h3>
-            <div class="hot-offer__hover">
-               <div class="hot-offer__square">
-                   <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-               </div>
-            </div>
-        </a>
-        <a href="#" class="hot-offer">
+            <a href="single.html">mango people t-shirt</a>
+            <h3>
+                $52.00
+                <div class="hot-offer__stars">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </h3>
+        </div>
+        <div class="hot-offer">
             <div class="hot-offer__shadow">
                 <img src="img/8-4.jpg" alt="t-shirt">
+                <div class="hot-offer__hover">
+                    <div class="hot-offer__square">
+                        <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
+                    </div>
+                </div>
             </div>
-            <h3>mango people t-shirt</h3>
-            <h3>$52.00</h3>
-            <div class="hot-offer__hover">
-               <div class="hot-offer__square">
-                   <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-               </div>
-            </div>
-        </a>
-        <a href="#" class="hot-offer">
+            <a href="single.html">mango people t-shirt</a>
+            <h3>
+                $52.00
+                <div class="hot-offer__stars">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </h3>
+        </div>
+        <div class="hot-offer">
             <div class="hot-offer__shadow">
                 <img src="img/8-5.jpg" alt="t-shirt">
+                <div class="hot-offer__hover">
+                    <div class="hot-offer__square">
+                        <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
+                    </div>
+                </div>
             </div>
-            <h3>mango people t-shirt</h3>
-            <h3>$52.00</h3>
-            <div class="hot-offer__hover">
-               <div class="hot-offer__square">
-                   <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-               </div>
-            </div>
-        </a>
-        <a href="#" class="hot-offer">
+            <a href="single.html">mango people t-shirt</a>
+            <h3>
+                $52.00
+                <div class="hot-offer__stars">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </h3>
+        </div>
+        <div class="hot-offer">
             <div class="hot-offer__shadow">
                 <img src="img/8-6.jpg" alt="t-shirt">
+                <div class="hot-offer__hover">
+                    <div class="hot-offer__square">
+                        <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
+                    </div>
+                </div>
             </div>
-            <h3>mango people t-shirt</h3>
-            <h3>$52.00</h3>
-            <div class="hot-offer__hover">
-               <div class="hot-offer__square">
-                   <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-               </div>
-            </div>
-        </a>
-        <a href="#" class="hot-offer">
+            <a href="single.html">mango people t-shirt</a>
+            <h3>
+                $52.00
+                <div class="hot-offer__stars">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </h3>
+        </div>
+        <div class="hot-offer">
             <div class="hot-offer__shadow">
                 <img src="img/8-7.jpg" alt="t-shirt">
+                <div class="hot-offer__hover">
+                    <div class="hot-offer__square">
+                        <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
+                    </div>
+                </div>
             </div>
-            <h3>mango people t-shirt</h3>
-            <h3>$52.00</h3>
-            <div class="hot-offer__hover">
-               <div class="hot-offer__square">
-                   <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-               </div>
-            </div>
-        </a>
-        <a href="#" class="hot-offer">
+            <a href="single.html">mango people t-shirt</a>
+            <h3>
+                $52.00
+                <div class="hot-offer__stars">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div class="empty-star"></div>
+                </div>
+            </h3>
+        </div>
+        <div class="hot-offer">
             <div class="hot-offer__shadow">
                 <img src="img/8-8.jpg" alt="t-shirt">
+                <div class="hot-offer__hover">
+                    <div class="hot-offer__square">
+                        <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
+                    </div>
+                </div>
             </div>
-            <h3>mango people t-shirt</h3>
-            <h3>$52.00</h3>
-            <div class="hot-offer__hover">
-               <div class="hot-offer__square">
-                   <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-               </div>
-            </div>
-        </a>
+            <a href="single.html">mango people t-shirt</a>
+            <h3>
+                $52.00
+                <div class="hot-offer__stars">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </h3>
+        </div>
         <div class="featured-items__undertitle">
             <a href="#">Browse All Product <i class="fas fa-long-arrow-alt-right"></i></a>
         </div>
@@ -250,6 +330,59 @@ a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”<
         </div>
        </div> <!-- End of .subscibe_wrapper -->
     </div></div> <!-- End of .subscibe -->
-    
+    <div class="container footer-menu">
+        <div class="footer-menu__left">
+            <a class="header__logo" href="index.html">
+                <img src="img/logo.png" alt="logo">bran <span>d</span>
+            </a>
+            <p>
+                Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+            </p>
+            <p>
+                Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+            </p>
+
+        </div>
+        <div class="footer-menu__right">
+            <div class="footer-menu__right-item">
+                <h3>company</h3>
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">How It Works</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-menu__right-item">
+                <h3>information</h3>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy Polocy</a>
+                <a href="#">How to Buy</a>
+                <a href="#">How to Sell</a>
+                <a href="#">Promotion</a>
+            </div>
+            <div class="footer-menu__right-item">
+                <h3>shop category</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Child</a>
+                <a href="#">Apparel</a>
+                <a href="#">Browse All</a>
+            </div>
+        </div>  <!-- End of footer-menu__right -->
+    </div> <!-- End of footer-menu -->
+    <div class="footer">
+        <div class="container footer_center">
+            <div>
+                &copy; 2017  Brand  All Rights Reserved.
+            </div>
+            <div>
+                <a href="#" class="footer__social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="footer__social"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer__social"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="footer__social"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" class="footer__social"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
