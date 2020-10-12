@@ -5,6 +5,44 @@
     <title>Product</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <script>
+        let kart = "img/kart_white.png";
+        let img = "https://raw.githubusercontent.com/Nicknk77/img/master/GB_img/product";
+        let items = ["mango people t-shirt-1", "mango people t-shirt-2", "mango people t-shirt-3", "mango people t-shirt-4", "mango people t-shirt-5", "mango people t-shirt-6", "mango people t-shirt-7", "mango people t-shirt-8", "mango people t-shirt-9"];
+        let price = [52, 54, 55, 62, 51, 57, 50, 42, 70];
+        let stars = ["", " class=\"half-star\"", "", "", "", "", "", " class=\"empty-star\"", ""];
+        function createFeaturedItem(items) {
+            let str = "";
+            items.forEach(function(element, index) {
+                str += `<div class="hot-offer">
+                <div class="hot-offer__shadow">
+                    <img src="${img}${index+1}.jpg" alt="t-shirt">
+                    <div class="hot-offer__hover">
+                        <div class="hot-offer__square hot-offer__square-product">
+                            <button><img src="${kart}" alt="order">Add to Cart</button>
+                            <div>
+                                <button><i class="fas fa-retweet"></i></button>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="single.html">${element}</a>
+                <h3>
+                    $${price[index]}.00
+                    <div class="hot-offer__stars">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div${stars[index]}></div>
+                    </div>
+                </h3>
+            </div>`;
+            });
+            return str;
+        }
+    </script>
 </head>
 <body>
 <div class="header container">
@@ -132,237 +170,16 @@
                 <button>09 <i class="fas fa-caret-down"></i></button>
             </div>
         </div>
-        <div class="container featured-items">
-            <div class="hot-offer">
-                <div class="hot-offer__shadow">
-                    <img src="img/product1.jpg" alt="t-shirt">
-                    <div class="hot-offer__hover">
-                        <div class="hot-offer__square hot-offer__square-product">
-                            <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-                            <div>
-                                <button><i class="fas fa-retweet"></i></button>
-                                <button><i class="far fa-heart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="single.html">mango people t-shirt</a>
-                <h3>
-                    $52.00
-                    <div class="hot-offer__stars">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
+        <div class="container featured-items" id="featured-items">
+<!----------------------------------------------------------------- div.featured-items----------------------------------------------->
 
-                </h3>
+            <script>
+                document.getElementById('featured-items').insertAdjacentHTML('afterbegin', createFeaturedItem(items));
+            </script>
 
+        </div>  
+<!---------------------------------------------------------- End of div.featured-items----------------------------------------------->
 
-            </div>
-            <div class="hot-offer">
-                <div class="hot-offer__shadow">
-                    <img src="img/product2.jpg" alt="t-shirt">
-                    <div class="hot-offer__hover">
-                        <div class="hot-offer__square hot-offer__square-product">
-                            <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-                            <div>
-                                <button><i class="fas fa-retweet"></i></button>
-                                <button><i class="far fa-heart"></i></button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <a href="single.html">mango people t-shirt</a>
-                <h3>
-                    $52.00
-                    <div class="hot-offer__stars">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div class="half-star"></div>
-                    </div>
-                </h3>
-            </div>
-            <div class="hot-offer">
-                <div class="hot-offer__shadow">
-                    <img src="img/8-3.jpg" alt="t-shirt">
-                    <div class="hot-offer__hover">
-                        <div class="hot-offer__square hot-offer__square-product">
-                            <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-                            <div>
-                                <button><i class="fas fa-retweet"></i></button>
-                                <button><i class="far fa-heart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="single.html">mango people t-shirt</a>
-                <h3>
-                    $52.00
-                    <div class="hot-offer__stars">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </h3>
-            </div>
-            <div class="hot-offer">
-                <div class="hot-offer__shadow">
-                    <img src="img/product4.jpg" alt="t-shirt">
-                    <div class="hot-offer__hover">
-                        <div class="hot-offer__square hot-offer__square-product">
-                            <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-                            <div>
-                                <button><i class="fas fa-retweet"></i></button>
-                                <button><i class="far fa-heart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="single.html">mango people t-shirt</a>
-                <h3>
-                    $52.00
-                    <div class="hot-offer__stars">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </h3>
-            </div>
-            <div class="hot-offer">
-                <div class="hot-offer__shadow">
-                    <img src="img/8-8.jpg" alt="t-shirt">
-                    <div class="hot-offer__hover">
-                        <div class="hot-offer__square hot-offer__square-product">
-                            <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-                            <div>
-                                <button><i class="fas fa-retweet"></i></button>
-                                <button><i class="far fa-heart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="single.html">mango people t-shirt</a>
-                <h3>
-                    $52.00
-                    <div class="hot-offer__stars">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </h3>
-            </div>
-            <div class="hot-offer">
-                <div class="hot-offer__shadow">
-                    <img src="img/product6.jpg" alt="t-shirt">
-                    <div class="hot-offer__hover">
-                        <div class="hot-offer__square hot-offer__square-product">
-                            <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-                            <div>
-                                <button><i class="fas fa-retweet"></i></button>
-                                <button><i class="far fa-heart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="single.html">mango people t-shirt</a>
-                <h3>
-                    $52.00
-                    <div class="hot-offer__stars">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </h3>
-            </div>
-            <div class="hot-offer">
-                <div class="hot-offer__shadow">
-                    <img src="img/8-6.jpg" alt="t-shirt">
-                    <div class="hot-offer__hover">
-                        <div class="hot-offer__square hot-offer__square-product">
-                            <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-                            <div>
-                                <button><i class="fas fa-retweet"></i></button>
-                                <button><i class="far fa-heart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="single.html">mango people t-shirt</a>
-                <h3>
-                    $52.00
-                    <div class="hot-offer__stars">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </h3>
-            </div>
-            <div class="hot-offer">
-                <div class="hot-offer__shadow">
-                    <img src="img/product8.jpg" alt="t-shirt">
-                    <div class="hot-offer__hover">
-                        <div class="hot-offer__square hot-offer__square-product">
-                            <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-                            <div>
-                                <button><i class="fas fa-retweet"></i></button>
-                                <button><i class="far fa-heart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="single.html">mango people t-shirt</a>
-                <h3>
-                    $52.00
-                    <div class="hot-offer__stars">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div class="empty-star"></div>
-                    </div>
-                </h3>
-            </div>
-            <div class="hot-offer">
-                <div class="hot-offer__shadow">
-                    <img src="img/product9.jpg" alt="t-shirt">
-                    <div class="hot-offer__hover">
-                        <div class="hot-offer__square hot-offer__square-product">
-                            <button><img src="img/kart_white.png" alt="order">Add to Cart</button>
-                            <div>
-                                <button><i class="fas fa-retweet"></i></button>
-                                <button><i class="far fa-heart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="single.html">mango people t-shirt</a>
-                <h3>
-                    $52.00
-                    <div class="hot-offer__stars">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </h3>
-            </div>
-        </div>  <!-- End of div.featured-items-->
         <div class="container product-pagination">
             <div>
                 <a href="#"><i class="fas fas fa-angle-left"></i></a>
