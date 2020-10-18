@@ -1,0 +1,30 @@
+{
+    "totalAmount": 3,
+    "totalPrice": 203,
+    "content": [
+        {
+            "productName":"ORANGE PEOPLE T-SHIRT",
+            "productPrice":67,
+            "productImg":"https://raw.githubusercontent.com/Nicknk77/img/master/GB_img/infeature4.jpg",
+            "productId":"prod_3",
+            "stars":" class='half-star'",
+            "amount": 2
+        },
+        {
+            "productName":"PUMKIN PEOPLE T-SHIRT",
+            "productPrice":69,
+            "productImg":"https://raw.githubusercontent.com/Nicknk77/img/master/GB_img/infeature5.jpg",
+            "productId":"prod_4",
+            "stars":" class='empty-star'",
+            "amount": 1
+        },
+        {
+            "productName":"REEBOK BLOUSE",
+            "productPrice":75,
+            "productImg":"https://raw.githubusercontent.com/Nicknk77/img/master/GB_img/infeature1.jpg",
+            "productId":"prod_5",
+            "stars":null,
+            "amount": 1
+        }
+    ]
+}
